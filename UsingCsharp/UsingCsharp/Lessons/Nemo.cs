@@ -1,4 +1,4 @@
-namespace UsingCSharp.Lessons;
+namespace UsingCsharp.Lessons;
 
 public class Nemo
 {

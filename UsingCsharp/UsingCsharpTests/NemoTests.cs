@@ -1,4 +1,4 @@
-namespace UsingCSharpTests;
+namespace UsingCsharpTests;
 
 public class NemoTests
 {
