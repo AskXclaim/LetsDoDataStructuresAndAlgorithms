@@ -1,26 +1,21 @@
 export class Interview {
-
-    public static ReverseString(aString: string): string {
-        if (!aString) return aString;
-
+    static ReverseString(aString) {
+        if (!aString)
+            return aString;
         let reversedString = [];
-
         for (let i = aString.length - 1; i >= 0; i--) {
             reversedString.push(aString[i]);
         }
-
         return reversedString.toString();
     }
-
-    public static MergeArray(arrayOne: number[], arrayTwo: number[]): number[] {
-        if (arrayOne.length == 0 && arrayTwo.length == 0) return arrayOne;
-
-        let arrayOneIndex: number = 0;
-        let arrayTwoIndex: number = 0;
-        let arrayOneItem: number | undefined = arrayOne[arrayOneIndex];
-        let arrayTwoItem: number | undefined = arrayTwo[arrayTwoIndex];
-        const mergedArray: number[] = [];
-
+    static MergeArray(arrayOne, arrayTwo) {
+        if (arrayOne.length == 0 && arrayTwo.length == 0)
+            return arrayOne;
+        let arrayOneIndex = 0;
+        let arrayTwoIndex = 0;
+        let arrayOneItem = arrayOne[arrayOneIndex];
+        let arrayTwoItem = arrayTwo[arrayTwoIndex];
+        const mergedArray = [];
         while (arrayOneItem !== undefined || arrayTwoItem !== undefined) {
             console.log(arrayOneItem === arrayTwoItem);
             if (arrayOneItem === arrayTwoItem) {
@@ -41,7 +36,6 @@ export class Interview {
                 arrayTwoItem = arrayTwo[++arrayTwoIndex];
             }
         }
-
         return mergedArray;
     }
 }

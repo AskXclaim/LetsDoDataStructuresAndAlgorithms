@@ -1,2 +1,4 @@
 import { Nemo } from "./Nemo.js";
-export { Nemo };
+import { GoogleInterview } from "./GoogleInterview.js";
+import { Interview } from "./Interview.js";
+export { Nemo, GoogleInterview, Interview };

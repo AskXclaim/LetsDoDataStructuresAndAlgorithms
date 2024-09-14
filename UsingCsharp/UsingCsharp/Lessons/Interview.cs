@@ -85,8 +85,8 @@ public static class Interview
         int arrayTwoLength) =>
         arrayOneIndex <= arrayOneLength - 1 && arrayTwoIndex <= arrayTwoLength - 1;
 
-    private static bool ShouldAssignItem(int arrayOneIndex, int arrayOneLength) =>
-        arrayOneIndex <= arrayOneLength - 1;
+    private static bool ShouldAssignItem(int index, int arrayLength) =>
+        index <= arrayLength - 1;
 
     private static bool ShouldUseArrayOneItem(int arrayOneItem, int arrayTwoItem, int arrayOneIndex,
         int arrayOneLength) =>
