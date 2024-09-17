@@ -1,4 +1,5 @@
-import {LinkedList} from "./Lessons";
+// import {LinkedList} from "./Lessons";
+import {DoublyLinkedList} from "./Lessons";
 
 // const largeCollection= new Array(1000).fill("none");
 // const started = performance.now();
@@ -20,16 +21,27 @@ import {LinkedList} from "./Lessons";
 //  console.log(result);
 //  hashTable.set("",0);
 
-const myLinkedList = new LinkedList(10);
-let result = myLinkedList.append(5);
-myLinkedList.append(16);
-console.log(result);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(20, 88);
-myLinkedList.remove(2);
-console.log(result);
+// const myLinkedList = new LinkedList(10);
+// let result = myLinkedList.append(5);
+// myLinkedList.append(16);
+// console.log(result);
+// myLinkedList.prepend(1);
+// myLinkedList.insert(2, 99);
+// myLinkedList.insert(20, 88);
+// myLinkedList.remove(2);
+// console.log(result);
 
+
+const myDoublyLinkedList = new DoublyLinkedList(10);
+// console.log(myDoublyLinkedList);
+let result = myDoublyLinkedList.append(5);
+myDoublyLinkedList.append(16); 
+// console.log(result);
+myDoublyLinkedList.prepend(1);
+myDoublyLinkedList.insert(2, 99);
+myDoublyLinkedList.insert(20, 88);
+myDoublyLinkedList.remove(2);
+console.log(result);
 
 // const myStack = new Stack();
 // myStack.push(1);
