@@ -1,6 +1,7 @@
 // import {LinkedList} from "./Lessons";
-import {DoublyLinkedList} from "./Lessons";
+// import {DoublyLinkedList} from "./Lessons";
 
+import {findFactorialIteratively, findFactorialRecursively} from "./Lessons";
 // const largeCollection= new Array(1000).fill("none");
 // const started = performance.now();
 // const result = Nemo.IsNemoPresent(largeCollection);
@@ -32,16 +33,16 @@ import {DoublyLinkedList} from "./Lessons";
 // console.log(result);
 
 
-const myDoublyLinkedList = new DoublyLinkedList(10);
-// console.log(myDoublyLinkedList);
-let result = myDoublyLinkedList.append(5);
-myDoublyLinkedList.append(16); 
+// const myDoublyLinkedList = new DoublyLinkedList(10);
+// // console.log(myDoublyLinkedList);
+// let result = myDoublyLinkedList.append(5);
+// myDoublyLinkedList.append(16); 
+// // console.log(result);
+// myDoublyLinkedList.prepend(1);
+// myDoublyLinkedList.insert(2, 99);
+// myDoublyLinkedList.insert(20, 88);
+// myDoublyLinkedList.remove(2);
 // console.log(result);
-myDoublyLinkedList.prepend(1);
-myDoublyLinkedList.insert(2, 99);
-myDoublyLinkedList.insert(20, 88);
-myDoublyLinkedList.remove(2);
-console.log(result);
 
 // const myStack = new Stack();
 // myStack.push(1);
@@ -66,7 +67,45 @@ console.log(result);
 // myQueue.dequeue();
 // myQueue.dequeue();
 
+// const binaryTree = new BinarySearchTree();
+// let result = binaryTree.insert(9);
+// binaryTree.insert(4);
+// binaryTree.insert(6);
+// binaryTree.insert(20);
+// binaryTree.insert(170);
+// binaryTree.insert(15);
+// binaryTree.insert(1);
+// binaryTree.insert(170);
+// console.log(result);
+//
+// const lookUpResult = binaryTree.lookup(20);
+//
+// console.log(lookUpResult);
+//
+// JSON.stringify(binaryTree.traverse(binaryTree.root!));
+// console.log(JSON.stringify(binaryTree.traverse(binaryTree.root!)));
 
+// const myGraph = new Graph();
+// myGraph.addVertex('0');
+// myGraph.addVertex('1');
+// myGraph.addVertex('2');
+// myGraph.addVertex('3');
+// myGraph.addVertex('4');
+// myGraph.addVertex('5');
+// myGraph.addVertex('6');
+// myGraph.addEdge('3', '1');
+// myGraph.addEdge('3', '4');
+// myGraph.addEdge('4', '2');
+// myGraph.addEdge('4', '5');
+// myGraph.addEdge('1', '2');
+// myGraph.addEdge('1', '0');
+// myGraph.addEdge('0', '2');
+// myGraph.addEdge('6', '5');
+//
+// myGraph.showConnections(); 
 
- 
- 
+const factorial = findFactorialIteratively(5);
+const recursivelyGottenFactorial = findFactorialRecursively(5);
+
+console.log(factorial);
+console.log(recursivelyGottenFactorial);
