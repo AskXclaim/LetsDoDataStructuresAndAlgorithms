@@ -22,4 +22,30 @@ const findFactorialIteratively = (number: number): number | null => {
 const isDecimal = (number: number) =>
     (number - Math.floor(number)) !== 0;
 
-export {findFactorialRecursively, findFactorialIteratively};
+const getValueOfFibonacciIndexIteratively = (index: number): number => {
+    let previous = 0;
+    let current = 1;
+    let result = 0;
+    if (index === 0) return result;
+    result = 1;
+    while (index > 1) {
+        result = previous + current;
+        previous = current;
+        current = result;
+        index--;
+    }
+    return result;
+}
+
+const getValueOfFibonacciIndexRecursively = (index: number): number => {
+    if (index < 2) return index;
+
+    return getValueOfFibonacciIndexRecursively(index - 1) + getValueOfFibonacciIndexRecursively(index - 2);
+}
+
+export {
+    findFactorialRecursively,
+    findFactorialIteratively,
+    getValueOfFibonacciIndexIteratively,
+    getValueOfFibonacciIndexRecursively
+};

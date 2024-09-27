@@ -1,6 +1,6 @@
 // import {LinkedList} from "./Lessons";
 // import {DoublyLinkedList} from "./Lessons";
-import { findFactorialIteratively, findFactorialRecursively } from "./Lessons";
+import { SelectionSort } from "./Lessons";
 // const largeCollection= new Array(1000).fill("none");
 // const started = performance.now();
 // const result = Nemo.IsNemoPresent(largeCollection);
@@ -93,7 +93,17 @@ import { findFactorialIteratively, findFactorialRecursively } from "./Lessons";
 // myGraph.addEdge('6', '5');
 //
 // myGraph.showConnections(); 
-const factorial = findFactorialIteratively(5);
-const recursivelyGottenFactorial = findFactorialRecursively(5);
-console.log(factorial);
-console.log(recursivelyGottenFactorial);
+// const factorial = findFactorialIteratively(5);
+// const recursivelyGottenFactorial = findFactorialRecursively(5);
+//
+// console.log(factorial);
+// console.log(recursivelyGottenFactorial);
+// const iterativelyValue = getValueOfFibonacciIndexIteratively(5);
+// const recursivelyValue = getValueOfFibonacciIndexRecursively(1);
+//
+// console.log(iterativelyValue);
+// console.log(recursivelyValue);
+// const  bubbleSortResult = BubbleSort.sort([6,5,3,1,8,7,2,4]);
+// console.log(bubbleSortResult);
+const selectionSortResult = SelectionSort.sort([6, 5, 3, 1, 8, 7, 2, 4]);
+console.log(selectionSortResult);

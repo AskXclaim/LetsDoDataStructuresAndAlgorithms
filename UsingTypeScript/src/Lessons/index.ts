@@ -12,7 +12,14 @@ import {Queue} from "./Queue.js";
 import {BinarySearchNode} from "./Trees/BinarySearchTree/BinarySearchNode.js";
 import {BinarySearchTree} from "./Trees/BinarySearchTree/BinarySearchTree.js";
 import {Graph} from "./Graphs/Graph.js";
-import {findFactorialIteratively, findFactorialRecursively} from "./Algorithms/Recursion.js";
+import {
+    findFactorialIteratively,
+    findFactorialRecursively,
+    getValueOfFibonacciIndexIteratively,
+    getValueOfFibonacciIndexRecursively
+} from "./Algorithms/Recursion.js";
+import {BubbleSort} from "./Algorithms/BubbleSort.js";
+import {SelectionSort} from "./Algorithms/SelectionSort.js";
 
 export {
     Nemo,
@@ -30,5 +37,8 @@ export {
     BinarySearchTree,
     Graph,
     findFactorialRecursively,
-    findFactorialIteratively
+    findFactorialIteratively,
+    getValueOfFibonacciIndexIteratively,
+    getValueOfFibonacciIndexRecursively,
+    BubbleSort, SelectionSort
 }
